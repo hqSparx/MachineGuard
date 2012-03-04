@@ -71,6 +71,7 @@ public void onReload() {
 		}
 	updateLists();
 }
+
 public void loadConfiguration() throws IOException {
 	File cfgFile = new File(this.getDataFolder() + "/config.yml");
 	YamlConfiguration config = YamlConfiguration.loadConfiguration(cfgFile);
@@ -99,8 +100,7 @@ public void updateLists() {
 }
 
 public boolean isBlocked(int id) {
-	if(blocked.contains(id)) return true;
-		else return false;
+	return blocked.contains(id);
 }
 
 public void loadIds() throws IOException {
