@@ -1,0 +1,6 @@
+name: MachineGuard
+main: me.hqSparx.MachineGuard.MachineGuard
+version: 0.9
+description: WG addon
+authors: [hqSparx]
+depend: [WorldGuard]
