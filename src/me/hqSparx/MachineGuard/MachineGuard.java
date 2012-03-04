@@ -9,8 +9,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
-import me.hqSparx.MachineGuard.MachineGuard;
-
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.Event;
 import org.bukkit.plugin.Plugin;
