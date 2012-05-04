@@ -28,8 +28,15 @@ public WorldGuardPlugin wg;
 		event.setCancelled(true);
 			}
 		}
+	if(id == 137 && event.getClickedBlock().getData() == (byte)3){
+		event.getPlayer().sendMessage("Tymczasowo wylaczone");
+		event.setCancelled(true);	
 	}
 	
+	
+	}
+	
+
 	
 	
 	
