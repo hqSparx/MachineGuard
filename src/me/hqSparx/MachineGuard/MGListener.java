@@ -1,12 +1,13 @@
 package me.hqSparx.MachineGuard;
 
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerListener;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 
 
-public class MGListener extends PlayerListener {
+public class MGListener implements Listener {
 
 public static MachineGuard plugin;
 public WorldGuardPlugin wg;
@@ -15,7 +16,7 @@ public WorldGuardPlugin wg;
 		plugin = instance;
 	}
 	
-	@Override
+	@EventHandler
 	public void onPlayerInteract (PlayerInteractEvent event)
 	{
 		if(!event.hasBlock())return;
