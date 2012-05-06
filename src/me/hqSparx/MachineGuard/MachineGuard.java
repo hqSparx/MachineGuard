@@ -72,7 +72,7 @@ public class MachineGuard extends JavaPlugin {
 		temp = new Integer[] {152, 155, 157, 161, 165, 166};
 		config.addDefault("bc-list", Arrays.asList(temp));
 		config.addDefault("deny-rp-interaction", true);
-		temp = new Integer[] {137, 138, 251};
+		temp = new Integer[] {137, 138, 251, 195, 196};
 		config.addDefault("rp-list", Arrays.asList(temp));
 		temp = new Integer[] {};
 		config.addDefault("custom-list", Arrays.asList(temp));
@@ -102,6 +102,6 @@ public class MachineGuard extends JavaPlugin {
 	}
 
 	public boolean isBlocked(int id) {
-		return blocked.contains(String.valueOf(id));
+		return blocked.contains(id);
 	}
 }
